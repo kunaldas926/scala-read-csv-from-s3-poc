@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'dev.kunal'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.spark:spark-core_2.13:3.2.2'
+    implementation 'org.apache.spark:spark-sql_2.13:3.2.2'
+    implementation 'org.apache.calcite:calcite-core:1.32.0'
+    implementation 'org.apache.calcite:calcite-avatica:1.6.0'
+    implementation 'org.apache.calcite:calcite-avatica-server:1.6.0'
+    implementation 'org.snakeyaml:snakeyaml-engine:2.4'
+    implementation 'org.yaml:snakeyaml:1.33'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testImplementation 'org.slf4j:slf4j-api:2.0.5'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}

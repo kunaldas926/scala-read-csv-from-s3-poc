@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    aws:
+      s3:
+        bucket: your-bucket-name
+        bucket-path: your-bucket-path
